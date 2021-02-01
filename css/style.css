@@ -6,3 +6,32 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+
+/* This makes sure everythign is consistent across all browsers */
+* {
+    margin: 0px;
+    padding: 0px;
+    /* This makes it so the width and height of the box is not included in the overall width and height */
+    box-sizing: border-box;
+}
+
+body {
+    /* We set the font to Lato and if that doesn't exist then it's sans-serif */
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px;
+}
+
+.header {
+    height: 95vh;
+    /* Linear gradient is a way to make a gradient that goes form the first color to the second */
+    background-image: linear-gradient(to right bottom,rgba(126, 213, 111, 0.801) ,rgba(40, 180, 133, 0.801)), url(../img/hero.jpg);
+    background-size: cover;
+    /* This makes it so that the top always stays at the top when adjusting the viewport */
+    background-position: top;
+    /* This lets you define a polygon that will clip out the image */
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
