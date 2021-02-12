@@ -32,6 +32,17 @@ body {
     background-size: cover;
     /* This makes it so that the top always stays at the top when adjusting the viewport */
     background-position: top;
+    position: relative;
     /* This lets you define a polygon that will clip out the image */
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo{
+    height: 35px;
 }
