@@ -46,3 +46,7 @@ body {
 .logo{
     height: 35px;
 }
+
+.heading-primary{
+    position: absolute;
+}
